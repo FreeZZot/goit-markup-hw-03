@@ -31,6 +31,7 @@ body {
     gap: 40px;
     width: 261px;
 }
+
 h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
 }
@@ -78,6 +79,7 @@ a:hover {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    padding: 24px 0 24px;
 }
 .navigationlink:hover, .navigationlink:focus, .adresslink:hover,
 .adresslink:focus {
