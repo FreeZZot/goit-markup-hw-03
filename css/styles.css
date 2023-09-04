@@ -7,31 +7,30 @@ body {
     color: #434455;
     background-color: #FFF;
 }
-header .container {
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header .container {
     display: flex;
-    border-bottom: 1px solid #E7E9FC;
-    padding: 24px 0 23px 0;
 }
 
 .container {
+    padding: 0 15px 0 15px;
     width: 1158px;
     margin: 0 auto;
     max-width: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
 }
 .navigation {
     display: flex;
     margin-right: 332px;
+    align-items: center;
 }
-.navigation ul {
+.navigation-list {
     display: flex;
     gap: 40px;
     width: 261px;
-    
+    padding: 24px 0 24px;
 }
-
 h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
 }
@@ -63,14 +62,17 @@ a:hover {
 .h-first-class {
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
+    margin: 0 auto;
     letter-spacing: 0.02em;
     color: #ffffff;
+    max-width: 496px;
 }
 .section-one {
     background-color: #2E2F42;
     text-align: center;
+    padding: 188px 0 188px;
 }
+
 .navigationlink {
     color: #2E2F42;
     font-weight: 500;
@@ -85,18 +87,20 @@ a:hover {
     color:#434455;
     font-style: normal;
 }
-.adress ul {
+.adress-list {
     gap: 40px;
     display: flex;
     width: 344px;
+    padding: 24px 0 24px;
 }
 .adresslink {
     letter-spacing: 0.02em;
     color: #434455;
 }
 .button {
-    margin-top: 48px;
-    padding: 16px 32px;
+    min-width: 169px;
+    display: block;
+    margin: 48px auto 0;
     background: #4D5AE5;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
@@ -105,14 +109,21 @@ a:hover {
     letter-spacing: 0.04em;
     color: #ffffff;
     border: none;
+    height: 56px;
+    border-radius: 4px;
 }
 .button:hover, .button:focus  {
     background: #404BBF;
 }
-.section-one-list {
+.section-two-list {
     display: flex;
     gap: 24px;
-    width: 1158px;
+}
+.section-two {
+    padding: 120px 0 120px;
+}
+.section-two-li {
+    flex-basis: calc((100% - 72px) / 4);
 }
 .drittetittel {
     font-weight: 500;
@@ -120,27 +131,27 @@ a:hover {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 0 16px;
+    margin-bottom: 8px;
 }
 .description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 8px 16px 32px 16px;
 }
 .our-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 8px 16px 32px 16px;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
 }
 .our-team {
     background-color: #F4F4FD;
+    padding: 120px 0 120px;
+}
+.our-team-block {
+    padding:32px 0 32px;
+ 
 }
 .sectionname {
     font-size: 36px;
@@ -154,9 +165,13 @@ a:hover {
 .our-team-list {
     display: flex;
     gap: 24px;
-    text-align: center;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.portfolio-section {
+    padding: 120px 0 120px 0;
 }
 .section-drei-list {
+    text-align: center;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -165,21 +180,26 @@ a:hover {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    row-gap: 48px;
 }
-.portfolio-list>li>h3 {
-    border-left: 1px solid #E7E9FC; 
-    border-right: 1px solid #E7E9FC;
-    padding-top: 32px;
+.portfolio-kasten {
+    width: calc((100% - 48px) / 3);
 }
+.portfolio-block {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .footer-p {
     color: #f4f4fd;
     letter-spacing: 0.02em;
     display: block;
     width: 264px;
-    margin-top: 17.5px;
 }
 .footerlogo {
     font-family: "Raleway", sans-serif;
@@ -189,17 +209,27 @@ a:hover {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footerlogospan {
     color: #f4f4fd;
-
 }
-
 .img-our-team {
     display: block;
-    width: 264px;
-    margin: 0 0 32px 0;
 }
 .img-portfolio {
     display: block;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
