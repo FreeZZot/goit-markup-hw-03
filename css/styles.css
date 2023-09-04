@@ -24,12 +24,12 @@ body {
     display: flex;
     margin-right: 332px;
     align-items: center;
+    padding: 24px 0 24px;
 }
 .navigation-list {
     display: flex;
     gap: 40px;
     width: 261px;
-    padding: 24px 0 24px;
 }
 h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
@@ -86,12 +86,12 @@ a:hover {
 .adress {
     color:#434455;
     font-style: normal;
+    padding: 24px 0 24px;
 }
 .adress-list {
     gap: 40px;
     display: flex;
     width: 344px;
-    padding: 24px 0 24px;
 }
 .adresslink {
     letter-spacing: 0.02em;
