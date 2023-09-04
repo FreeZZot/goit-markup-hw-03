@@ -9,6 +9,7 @@ body {
 }
 .header {
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0 24px;
 }
 .header .container {
     display: flex;
@@ -24,7 +25,6 @@ body {
     display: flex;
     margin-right: 332px;
     align-items: center;
-    padding: 24px 0 24px;
 }
 .navigation-list {
     display: flex;
@@ -86,7 +86,6 @@ a:hover {
 .adress {
     color:#434455;
     font-style: normal;
-    padding: 24px 0 24px;
 }
 .adress-list {
     gap: 40px;
